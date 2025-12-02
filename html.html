@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Sirenita - Producción</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/b5ZAo6CvvbMdiFQY13YqTBns0C9.webp" alt="La Sirenita" style="height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active fs-5" href="#">Inicio</a>
+          <a class="nav-link active fs-5" href="#personajes">Personajes</a>
+          <a class="nav-link active fs-5" href="#produccion">Producción</a>
+          <a class="nav-link active fs-5" href="#sobremi">Sobre mí</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pantalla inicial -->
+  <div id="inicio">
+    <video autoplay muted loop id="inicio-video">
+      <source src="videos/sirenitavideo.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+
+    <div class="inicio-overlay"></div>
+
+    <div class="inicio-content text-center">
+      <img src="img/b5ZAo6CvvbMdiFQY13YqTBns0C9.webp" alt="La Sirenita" class="inicio-logo">
+      <p class="inicio-text mb-4 w-50 mx-auto">
+        Ariel te invita a sumergirte en una historia llena de encuentros inesperados y decisiones que la llevarán a
+        descubrir el mundo de la superficie.
+      </p>
+      <button type="button" class="btn btn-primary btn-lg px-5 py-3" data-bs-toggle="modal"
+        data-bs-target="#modalAventura">
+        Comenzar Aventura
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal Aventura -->
+  <div class="modal fade" id="modalAventura" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="aventuraa" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen d-flex justify-content-center align-items-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/b5ZAo6CvvbMdiFQY13YqTBns0C9.webp" alt="Logo" style="height: 40px;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center" style="overflow: hidden;">
+          <iframe src="tpfinalparte1/index.html" frameborder="0" width="645" height="485"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN: Personajes -->
+  <section id="personajes" class="text-center py-5">
+    <h2>Personajes</h2>
+    <p>Conocé a quienes formarán parte de tu historia: aliados, guías y enemigos que influirán en cada decisión que
+      tomes.</p>
+
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-12">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner carousel-gradient">
+              <div class="carousel-item active">
+                <img src="img/la_sirenita_280fe43b (Personalizado).jpeg" class="d-block w-100" alt="Ariel">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Ariel</h5>
+                  <p class="fs-5">Curiosa, valiente y soñadora. Siempre lista para explorar más allá del océano y
+                    descubrir el mundo de la superficie.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/eric.jpg" class="d-block w-100" alt="Eric">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Eric</h5>
+                  <p class="fs-5">Un joven humano aventurero, amable y decidido. Su conexión con Ariel cambiará el
+                    destino de ambos mundos.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/triton.png" class="d-block w-100" alt="Tritón">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Tritón</h5>
+                  <p class="fs-5">Rey del mar y padre protector de Ariel. Poderoso y firme, pero con un gran corazón
+                    bajo toda su autoridad.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/2d456a27-dd5d-465a-9cd2-2c43f5f0.jpg" class="d-block w-100" alt="Úrsula">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Úrsula</h5>
+                  <p class="fs-5">Astuta y manipuladora. Experta en hacer tratos tentadores que siempre esconden un
+                    precio muy alto.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/sebastian.jpg" class="d-block w-100" alt="Sebastián">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Sebastián</h5>
+                  <p class="fs-5">Leal consejero del reino y encargado de mantener todo bajo control. Vive preocupado…
+                    pero nunca abandona a sus amigos.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: Producción -->
+  <section id="produccion" class="text-center py-5">
+    <h2>Producción</h2>
+    <p>Descubrí el proceso creativo detrás del juego: el diseño de pantallas y gráficos, y cómo se organiza la
+      historia a través del diagrama de flujo.</p>
+
+    <!-- Diagrama de flujo -->
+    <div class="container py-5">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 d-flex">
+          <img src="img/White, Grey and Blue Browser Nerdy Birthday Card.png"
+            class="img-fluid rounded-4 shadow w-100" style="object-fit: contain;" alt="Diagrama">
+        </div>
+
+        <div class="col-md-6 d-flex">
+          <div class="card w-100 d-flex flex-column justify-content-center text-start">
+            <div class="card-body">
+              <h5 class="card-title">1. Diagrama de flujo</h5>
+              <p class="card-text fs-4">
+                Este diagrama de flujo resume el recorrido principal de la aventura, mostrando cómo se conectan
+                las decisiones del jugador con los distintos eventos del juego.
+              </p>
+              <a href="https://www.figma.com/proto/mfRFBEvDptqC21oPpalXjZ/Untitled?node-id=3-7&p=f&t=gsZYLlOxThAAuz0v-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                target="_blank" class="btn btn-primary mt-3 align-self-start px-4 py-3 fs-5">
+                Ir al recurso
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arte -->
+    <div class="container py-5">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 d-flex">
+          <img src="img/sirenita.png" class="img-fluid rounded-4 shadow w-100" style="object-fit: contain;"
+            alt="Arte">
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column justify-content-center text-start">
+              <h5 class="card-title">2. Arte</h5>
+              <p class="card-text fs-4">
+                Galería de ilustraciones y arte conceptual creados para dar vida al mundo de La Sirenita en esta
+                aventura interactiva.
+              </p>
+              <button type="button" class="btn btn-primary mt-3 align-self-start px-4 py-3 fs-5"
+                data-bs-toggle="modal" data-bs-target="#carouselModal">
+                Ver galería
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Código -->
+    <div class="container py-5">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 d-flex">
+          <img src="img/processingscreen.png" class="img-fluid rounded-4 shadow w-100" style="object-fit: contain;"
+            alt="Código">
+        </div>
+
+        <div class="col-md-6 d-flex">
+          <div class="card w-100 d-flex flex-column justify-content-center text-start">
+            <div class="card-body">
+              <h5 class="card-title">3. Código en Processing</h5>
+              <p class="card-text fs-4">
+                Utilicé Processing, funciones y p5.js para dar forma a la aventura gráfica. Implementa mecánicas
+                que sostienen la aventura gráfica, mostrando cómo las decisiones del jugador se traducen
+                en eventos interactivos dentro del juego.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Galería de Arte -->
+  <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white" id="carouselModalLabel">Galería de Arte</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center p-0">
+          <div id="modalCarousel" class="carousel slide w-100 h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <img src="img/escena0.png" class="img-fluid"
+                    style="max-height: 80vh; max-width: 90vw; object-fit: contain;" alt="Arte 1">
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <img src="img/escena3.png" class="img-fluid"
+                    style="max-height: 80vh; max-width: 90vw; object-fit: contain;" alt="Arte 2">
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <img src="img/escena8.png" class="img-fluid"
+                    style="max-height: 80vh; max-width: 90vw; object-fit: contain;" alt="Arte 3">
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <img src="img/escena12.png" class="img-fluid"
+                    style="max-height: 80vh; max-width: 90vw; object-fit: contain;" alt="Arte 4">
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <img src="img/escena22.png" class="img-fluid"
+                    style="max-height: 80vh; max-width: 90vw; object-fit: contain;" alt="Arte 5">
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN: Sobre mí -->
+  <section id="sobremi" class="py-5">
+    <h2 class="text-center">Sobre mí</h2>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="card">
+            <div class="card-body text-start">
+              <h5 class="card-title">Franco Colapaolo</h5>
+              <p class="card-text" style="font-size: 1.6rem;">
+                Encargado de diseñar la página y la aventura gráfica, desarrollando la estructura principal del
+                código con p5.js y Processing. También creé la estética visual, incorporé sonidos y realicé ajustes
+                para que la experiencia de juego fuera fluida y completa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="text-white pt-5 pb-4 border-secondary border-opacity-25">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand fw-bold fs-4 text-white d-block mb-3" href="#">
+            La Sirenita Aventura Gráfica
+          </a>
+          <p class="text-white-75 mb-4" style="max-width: 300px;">
+            Materia <strong>Tecnologías web</strong>.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 ms-auto">
+          <h4 class="fw-bold mb-3 fs-6 text-uppercase letter-spacing-1 text-white">Navegar</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#" class="footer-link-dark text-white-75 text-decoration-none">Inicio</a></li>
+            <li><a href="#personajes" class="footer-link-dark text-white-75 text-decoration-none">Personajes</a></li>
+            <li><a href="#produccion" class="footer-link-dark text-white-75 text-decoration-none">Producción</a></li>
+            <li><a href="#sobremi" class="footer-link-dark text-white-75 text-decoration-none">Sobre mí</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="small text-white-50 mb-0">
+            2025 Franco Colapaolo Comisión 5
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
